@@ -1,0 +1,9 @@
+[Unit]
+Description=slogr client
+
+[Service]
+User=root
+Restart=always
+RestartSec=120s
+ExecStart= /bin/bash -c /home/ubuntu/client.sh
+

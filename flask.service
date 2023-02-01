@@ -1,0 +1,11 @@
+[Unit]
+Description=flask client service
+[Install]
+WantedBy=multi-user.target
+[Service]
+Type=simple
+User=ubuntu
+PermissionsStartOnly=true
+ExecStart=python3 /home/ubuntu/app.py
+Restart=on-failure
+TimeoutSec=600 

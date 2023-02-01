@@ -1,0 +1,11 @@
+[Unit]
+Description=server slogr
+[Install]
+WantedBy=multi-user.target
+[Service]
+Type=simple
+User=root
+PermissionsStartOnly=true
+ExecStart=/home/ubuntu/slogr -s 8009
+Restart=on-failure
+TimeoutSec=600 

@@ -1,0 +1,1 @@
+out=$(/home/ubuntu/slogr -s 8009)
